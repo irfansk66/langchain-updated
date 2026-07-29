@@ -1,0 +1,25 @@
+[project]
+name = "langchain-updated"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "irfansk66", email = "irfansk66@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "langchain>=1.3.14",
+    "langchain-community>=0.4.2",
+    "langchain-google-genai>=4.3.2",
+    "langchain-groq>=1.1.3",
+    "langchain-openai>=1.4.1",
+    "python-dotenv>=1.2.2",
+]
+
+[project.scripts]
+langchain-updated = "langchain_updated:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
